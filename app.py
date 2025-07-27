@@ -32,7 +32,7 @@ async def summarize_text(item: TextToSummarize):
     # Perform summarization
     summary = summarizer(input_text, max_length=130, min_length=30, do_sample=False)[0]["summary_text"]
 
-    # Placeholder for evaluation (e.g., ROUGE scores if ground truth is available)
+    # Placeholder for evaluation 
 
     return {"original_text": input_text, "summary": summary}
 
